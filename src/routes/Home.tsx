@@ -3,7 +3,6 @@ import {useState} from 'react';
 import { UserProps } from "../types/user";
 import User from '../components/User'
 import Error from "../components/Error";
-// import axios from "axios";
 
 const Home = () => {
     const [user, setUser] = useState<UserProps | null>(null)
@@ -21,7 +20,6 @@ const Home = () => {
             return
         }
         setError(false);
-
         const {avatar_url, login, location, followers, following} = data
         const userData: UserProps = {
             avatar_url,

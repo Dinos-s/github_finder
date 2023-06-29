@@ -1,6 +1,6 @@
 import { useState, KeyboardEvent } from "react";
 import { BsSearch } from "react-icons/bs";
-import classes from './Search.module.css'
+import classes from '../moduleCss/Search.module.css'
 type SearchProps = {
     loadUser: (userName: string) => Promise<void>
 }

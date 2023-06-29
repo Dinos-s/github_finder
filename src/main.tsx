@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-
-import Home from "./routes/Home";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from "./routes/Home";
+import Repos from "./routes/Repos";
 
 const rota = createBrowserRouter([
   {
@@ -14,6 +14,10 @@ const rota = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/repos/:username',
+        element: <Repos />
       }
     ]
   }
